@@ -1,0 +1,4 @@
+django==2.2
+django-oscar[sorl-thumbnail]
+django-oscar-api==2.1.1
+pycountry
