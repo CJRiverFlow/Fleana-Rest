@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-     'django.contrib.sites',
+    'django.contrib.sites',
     'django.contrib.flatpages',
 
     'oscar.config.Shop',
@@ -186,3 +186,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#NEW OSCAR API SETTINGS
+OSCARAPI_BLOCK_ADMIN_API_ACCESS = False 
+OSCARAPI_ENABLE_REGISTRATION = True
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
